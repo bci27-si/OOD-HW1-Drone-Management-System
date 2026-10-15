@@ -2,6 +2,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("      Select a manufacturer: \n--- Manufacturer A \n--- Manufacturer B");
+
+        System.out.println("");
+
 
 
     }

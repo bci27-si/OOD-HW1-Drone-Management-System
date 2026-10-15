@@ -23,8 +23,6 @@ public abstract class Drone_Factory {
 
 }
 
-
-
 /*
 
  */
