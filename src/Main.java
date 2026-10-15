@@ -4,7 +4,24 @@ public class Main {
 
         System.out.println("      Select a manufacturer: \n--- Manufacturer A \n--- Manufacturer B");
 
+        System.out.println("Select Drone Type: \n--- Drone Type A \n--- Drone Type B");
+
+        // prep for basic options etc
+        System.out.println("Surveillance Drone");
+
+        System.out.println("Delivery Drone");
+
+        System.out.println("Agricultural Drone");
+
+
+
+        System.out.println("Select Battery Capacity:");
+        System.out.println(" Select Aproximate Flight Hours");
+        System.out.println(" Select special features ?");
+
+
         System.out.println("");
+
 
 
 
