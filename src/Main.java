@@ -15,12 +15,18 @@ public class Main {
 
 
 
-        System.out.println("Select Battery Capacity:");
-        System.out.println(" Select Aproximate Flight Hours");
+        System.out.println(" Select Battery Capacity:");
+        System.out.println(" Select Approximate Flight Hours");
         System.out.println(" Select special features ?");
 
 
         System.out.println("");
+
+/// needs full redesign
+/// manufacturer factory and drone builder... or drone abstract factory
+///
+///
+
 
 
 
