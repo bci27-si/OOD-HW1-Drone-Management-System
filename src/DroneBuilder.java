@@ -11,7 +11,7 @@
 // might needto change this to be a
 
 
-public abstract class Drone_Factory {
+public abstract class DroneBuilder implements DroneInterface{
 
     public abstract void BatteryCapacity();
 

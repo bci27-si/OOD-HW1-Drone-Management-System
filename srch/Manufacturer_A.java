@@ -1,4 +1,4 @@
-public class Builder_Manufacturer_A {
+public class Manufacturer_A extends ManufacturerFactory{
 
 
 
