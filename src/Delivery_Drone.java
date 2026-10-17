@@ -1,20 +1,17 @@
-public class Delivery_Drone_Factory extends Drone_Factory {
+public class Delivery_Drone implements Drone {
     @Override
-    public void BatteryCapacity() {
-
+    public void batteryCapacity() {
         System.out.println("Battery Capacity: 40,000mAh");
 
     }
 
     @Override
-    public void FlightRange() {
+    public void flightRange() {
         System.out.println("Flight Range: 65 Flight Hours");
-
     }
 
     @Override
-    public void SpecialFeatures() {
-        super.SpecialFeatures();
+    public void specialFeatures() {
         System.out.println("Payload Carrying Mechanism");
     }
 
