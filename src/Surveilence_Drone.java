@@ -19,7 +19,8 @@ public class Surveilence_Drone implements Drone {
     // this reeks of builder pattern...
     @Override
     public void specialFeatures() {
-        System.out.println("Special Feature: \n - High Quality Camera.\n - Zoom 100x \n - infrared Night-Vision");
+        System.out.println("Special Feature: ");
+
 
     }
 }

@@ -21,7 +21,9 @@ public class Main {
         while (true) {
             System.out.println("      Select a manufacturer: \n--- Manufacturer A \n--- Manufacturer B");
             String choose = scnr.nextLine();
-            System.out.println("Manufacturer " + choose + "Chosen");
+            System.out.println("Manufacturer " + choose.toUpperCase() + " Chosen");
+            // used to upper so i matches nicely
+
             //System.out.println("Select Drone Type: \n--- Drone Type A \n--- Drone Type B");
             /*String droneType = scnr.nextLine();
             if (droneType.equals("1")) {
@@ -29,40 +31,51 @@ public class Main {
             */
             // prep for basic options etc
             System.out.println("Surveillance Drone");// if statements for scanner, but scanner not used
-            if (choose.equals("A")) {
+            if (choose.equalsIgnoreCase("A")) {
                 a.makeSurveilenceDrone();
-            } else if (choose.equals("B")) {
+            } else if (choose.equalsIgnoreCase("B")) {
                 b.makeSurveilenceDrone();
             }
+
 
             System.out.println("Delivery Drone");
             if (choose.equals("A")) {// use ignore case preventing read errors for lowerase letter ?
                 a.makeDeliveryDrone();
             }
-            else if (choose.equals("B")) {
+            else if (choose.equalsIgnoreCase("B")) {
                 b.makeSurveilenceDrone();
             }
             else {
                 System.out.println("Invalid Input");
             }
 
+
             System.out.println("Agricultural Drone");
-            if (choose.equals("A")) {
+            if (choose.equalsIgnoreCase("A")) {
                 a.makeAgriculturalDrone();
 
-            } else if (choose.equals("B")) {
+            } else if (choose.equalsIgnoreCase("B")) {
                 b.makeSurveilenceDrone();
             } else {
                 System.out.println("Invalid Input");
             }
             //if (droneType.equals("1")) {}
 
-            System.out.println("Are you done?");
+            System.out.println(" FInished ? Change manufacturer? Restart? '- Done -' \n ' - Change - ' \n ' - Restart - ' ");
+
             String end = scnr.nextLine();
 
-            if (end.equals.ignoreCase("Yes")) {
-                System.out.println("Order ");
+            if (end.equalsIgnoreCase("Done")) {
+                System.out.println("Order Complete");
                 break;
+            }
+
+            else if (end.equalsIgnoreCase("Change")) {
+                System.out.println("Changing Manufacturer...");
+                //choose.
+            }
+            else {
+                System.out.println("SOmething brok");
             }
         }
     }
