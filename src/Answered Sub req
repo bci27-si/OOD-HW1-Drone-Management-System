@@ -1,0 +1,22 @@
+
+Had jose help with UML
+quickly checked class available code on github
+
+finally convinced me to use abstract factory and factory
+
+searched online for scanner,and ignorre case
+
+i made it possible to select the manufacturer in main / test class
+calling each method simply prints out the related information
+
+if you want to add an extra drone class, you would;
+    - dpulicate one of the classes,
+    - update all the names and data
+    - make sure the interface is implemented properly
+
+
+
+
+
+
+

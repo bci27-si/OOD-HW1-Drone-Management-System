@@ -21,12 +21,12 @@ public class Main {
         while (true) {
             System.out.println("      Select a manufacturer: \n--- Manufacturer A \n--- Manufacturer B");
             String choose = scnr.nextLine();
-            System.out.println("");
+            System.out.println("Manufacturer " + choose + "Chosen");
             //System.out.println("Select Drone Type: \n--- Drone Type A \n--- Drone Type B");
-            String droneType = scnr.nextLine();
+            /*String droneType = scnr.nextLine();
             if (droneType.equals("1")) {
             }
-
+            */
             // prep for basic options etc
             System.out.println("Surveillance Drone");// if statements for scanner, but scanner not used
             if (choose.equals("A")) {
@@ -38,9 +38,11 @@ public class Main {
             System.out.println("Delivery Drone");
             if (choose.equals("A")) {// use ignore case preventing read errors for lowerase letter ?
                 a.makeDeliveryDrone();
-            } else if (choose.equals("B")) {
+            }
+            else if (choose.equals("B")) {
                 b.makeSurveilenceDrone();
-            } else {
+            }
+            else {
                 System.out.println("Invalid Input");
             }
 
@@ -54,9 +56,17 @@ public class Main {
                 System.out.println("Invalid Input");
             }
             //if (droneType.equals("1")) {}
+
+            System.out.println("Are you done?");
+            String end = scnr.nextLine();
+
+            if (end.equals.ignoreCase("Yes")) {
+                System.out.println("Order ");
+                break;
+            }
         }
-
-
+    }
+}
 /*
         System.out.println(" Select Battery Capacity:");
         System.out.println(" Select Approximate Flight Hours");
@@ -69,15 +79,6 @@ public class Main {
 /// manufacturer factory and drone builder... or drone abstract factory
 ///redraw UML AGAIN
 
-
-
-
-
-    }
-
-}
-
-
 /*
 Patterns:
 Factory - prodices drones, but with different specifications.
@@ -86,7 +87,6 @@ Extend with iterator pattern
 
 _________________
  */
-
 
 
 /*
