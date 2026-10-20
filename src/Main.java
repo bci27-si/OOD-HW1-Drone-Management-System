@@ -1,18 +1,46 @@
+import java.util.Scanner;
+
 public class Main {
+    import java.util.Scanner;
 
 
     public static void main(String[] args) {
 
-        System.out.println("      Select a manufacturer: \n--- Manufacturer A \n--- Manufacturer B");
+        Scanner scnr = new Scanner(System.in);
+        Manufacturer_A a = new Manufacturer_A();
+        Manufacturer_B b = new Manufacturer_B();
 
+/*
+        Surveilence_Drone sur = new Surveilence_Drone();
+        Delivery_Drone d = new Delivery_Drone();
+        Agricultural_Drone a = new Agricultural_Drone();
+
+        Manufacturer_A m = new Manufacturer_A(sur,d,a);
+*/
+        // use scnr.close()
+
+
+        System.out.println("      Select a manufacturer: \n--- Manufacturer A \n--- Manufacturer B");
+        String choose.scnr();
         System.out.println("Select Drone Type: \n--- Drone Type A \n--- Drone Type B");
 
+        a.makeSurveilenceDrone();
         // prep for basic options etc
-        System.out.println("Surveillance Drone");
+        System.out.println("Surveillance Drone");// if statements for scanner, but scanner not used
+        a.makeSurveilenceDrone();
+        b.makeSurveilenceDrone();
 
         System.out.println("Delivery Drone");
 
+
+        if ()
+
+        a.makeDeliveryDrone();
+        b.makeSurveilenceDrone();
+
         System.out.println("Agricultural Drone");
+        a.makeAgriculturalDrone();
+        b.makeSurveilenceDrone();
 
 
 /*
