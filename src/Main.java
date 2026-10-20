@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-    import java.util.Scanner;
 
 
     public static void main(String[] args) {
@@ -19,28 +18,43 @@ public class Main {
 */
         // use scnr.close()
 
+        while (true) {
+            System.out.println("      Select a manufacturer: \n--- Manufacturer A \n--- Manufacturer B");
+            String choose = scnr.nextLine();
+            System.out.println("");
+            //System.out.println("Select Drone Type: \n--- Drone Type A \n--- Drone Type B");
+            String droneType = scnr.nextLine();
+            if (droneType.equals("1")) {
+            }
 
-        System.out.println("      Select a manufacturer: \n--- Manufacturer A \n--- Manufacturer B");
-        String choose.scnr();
-        System.out.println("Select Drone Type: \n--- Drone Type A \n--- Drone Type B");
+            // prep for basic options etc
+            System.out.println("Surveillance Drone");// if statements for scanner, but scanner not used
+            if (choose.equals("A")) {
+                a.makeSurveilenceDrone();
+            } else if (choose.equals("B")) {
+                b.makeSurveilenceDrone();
+            }
 
-        a.makeSurveilenceDrone();
-        // prep for basic options etc
-        System.out.println("Surveillance Drone");// if statements for scanner, but scanner not used
-        a.makeSurveilenceDrone();
-        b.makeSurveilenceDrone();
+            System.out.println("Delivery Drone");
+            if (choose.equals("A")) {// use ignore case preventing read errors for lowerase letter ?
+                a.makeDeliveryDrone();
+            } else if (choose.equals("B")) {
+                b.makeSurveilenceDrone();
+            } else {
+                System.out.println("Invalid Input");
+            }
 
-        System.out.println("Delivery Drone");
+            System.out.println("Agricultural Drone");
+            if (choose.equals("A")) {
+                a.makeAgriculturalDrone();
 
-
-        if ()
-
-        a.makeDeliveryDrone();
-        b.makeSurveilenceDrone();
-
-        System.out.println("Agricultural Drone");
-        a.makeAgriculturalDrone();
-        b.makeSurveilenceDrone();
+            } else if (choose.equals("B")) {
+                b.makeSurveilenceDrone();
+            } else {
+                System.out.println("Invalid Input");
+            }
+            //if (droneType.equals("1")) {}
+        }
 
 
 /*
@@ -49,7 +63,7 @@ public class Main {
         System.out.println(" Select special features ?");
 */
 
-        System.out.println("");
+        //System.out.println("");
 
 /// needs full redesign
 /// manufacturer factory and drone builder... or drone abstract factory
