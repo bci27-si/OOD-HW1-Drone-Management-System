@@ -12,7 +12,7 @@ public class Manufacturer_B implements Manufacturer {
 
         // call all methods from that class here, create Manuf_b Version
     }
-// for commit to go through
+// for commi
     @Override
     public void makeDeliveryDrone() {
         System.out.println("Make Delivery Drone");
