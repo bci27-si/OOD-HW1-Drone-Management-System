@@ -15,11 +15,11 @@ public class Main {
         System.out.println("Agricultural Drone");
 
 
-
+/*
         System.out.println(" Select Battery Capacity:");
         System.out.println(" Select Approximate Flight Hours");
         System.out.println(" Select special features ?");
-
+*/
 
         System.out.println("");
 
