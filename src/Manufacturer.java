@@ -1,3 +1,5 @@
+/// contains base methods for drone production
+
 public interface Manufacturer {
 
     void makeSurveilenceDrone();

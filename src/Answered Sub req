@@ -1,22 +1,16 @@
 
 Had jose help with UML
 quickly checked class available code on github
+    -- I think the problem with the merge is that i have two different accounts here...
 
 finally convinced me to use abstract factory and factory
 
-searched online for scanner,and ignorre case
+searched online for scanner,and ignore case
 
 i made it possible to select the manufacturer in main / test class
 calling each method simply prints out the related information
 
 if you want to add an extra drone class, you would;
-    - dpulicate one of the classes,
+    - dulicate one of the classes,
     - update all the names and data
-    - make sure the interface is implemented properly
-
-
-
-
-
-
-
+    - make sure the interface is implemented properly add creation method to manufacturer and apply specific

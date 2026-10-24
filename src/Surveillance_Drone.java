@@ -1,4 +1,6 @@
-public class Surveilence_Drone implements Drone {
+/// Class Surveillance_Drone uses drone interface
+/// creates default values for each component of the drone
+public class Surveillance_Drone implements Drone {
 
 
     @Override

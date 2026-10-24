@@ -1,3 +1,5 @@
+/// Class Delivery_Drone uses drone interface
+/// creates default values for each component of the drone
 public class Delivery_Drone implements Drone {
     @Override
     public void batteryCapacity(int capacity) {

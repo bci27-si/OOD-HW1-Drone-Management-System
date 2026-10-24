@@ -9,37 +9,60 @@ public class Main {
         Manufacturer_A a = new Manufacturer_A();
         Manufacturer_B b = new Manufacturer_B();
 
-/*
-        Surveilence_Drone sur = new Surveilence_Drone();
-        Delivery_Drone d = new Delivery_Drone();
-        Agricultural_Drone a = new Agricultural_Drone();
 
-        Manufacturer_A m = new Manufacturer_A(sur,d,a);
-*/
         // use scnr.close()
+
+        int counter = 0;
 
         while (true) {
             System.out.println("      Select a manufacturer: \n--- Manufacturer A \n--- Manufacturer B");
             String choose = scnr.nextLine();
             System.out.println("Manufacturer " + choose.toUpperCase() + " Chosen");
             // used to upper so i matches nicely
-
-            //System.out.println("Select Drone Type: \n--- Drone Type A \n--- Drone Type B");
-            /*String droneType = scnr.nextLine();
-            if (droneType.equals("1")) {
-            }
-            */
             // prep for basic options etc
+            System.out.println("Building Drones by Manufacturer " + choose.toUpperCase() + "\n");
+            if(choose.equalsIgnoreCase("A")) {
+                System.out.println("Making Surveilence Drone");
+                a.makeSurveilenceDrone();
+
+                System.out.println("Making Agricultural Drone");
+                a.makeAgriculturalDrone();
+
+                System.out.println("Making Delivery Drone");
+                a.makeDeliveryDrone();
+            }
+            else if(choose.equalsIgnoreCase("B")) {
+                System.out.println("Making Surveilence Drone");
+                b.makeSurveilenceDrone();
+
+                System.out.println("Making Agricultural Drone");
+                b.makeAgriculturalDrone();
+
+                System.out.println("Making Delivery Drone");
+                b.makeDeliveryDrone();
+            }
+            else{
+                System.out.println("Invalid choice.");
+                // ends up being 5, but idk
+                if(counter > 3){
+                    System.out.println(" 5 Invalid choices");
+
+                    break;
+                }
+                counter+=1;
+            }
+
+            /*
             System.out.println("Surveillance Drone");// if statements for scanner, but scanner not used
             if (choose.equalsIgnoreCase("A")) {
                 a.makeSurveilenceDrone();
+
             } else if (choose.equalsIgnoreCase("B")) {
                 b.makeSurveilenceDrone();
             }
 
-
             System.out.println("Delivery Drone");
-            if (choose.equals("A")) {// use ignore case preventing read errors for lowerase letter ?
+            if (choose.equalsIgnoreCase("A")) {// use ignore case preventing read errors for lowerase letter ?
                 a.makeDeliveryDrone();
             }
             else if (choose.equalsIgnoreCase("B")) {
@@ -48,7 +71,6 @@ public class Main {
             else {
                 System.out.println("Invalid Input");
             }
-
 
             System.out.println("Agricultural Drone");
             if (choose.equalsIgnoreCase("A")) {
@@ -76,31 +98,17 @@ public class Main {
             }
             else {
                 System.out.println("SOmething brok");
-            }
+            }*/
         }
     }
 }
-/*
-        System.out.println(" Select Battery Capacity:");
-        System.out.println(" Select Approximate Flight Hours");
-        System.out.println(" Select special features ?");
-*/
-
-        //System.out.println("");
-
-/// needs full redesign
-/// manufacturer factory and drone builder... or drone abstract factory
-///redraw UML AGAIN
 
 /*
 Patterns:
-Factory - prodices drones, but with different specifications.
-
-Extend with iterator pattern
-
+Factory - Produces Manufacturers, but with different specifications.
+Abstract factory - Produces drones with manufacturer specs
 _________________
  */
-
 
 /*
 Problem 2 : Drone Management System

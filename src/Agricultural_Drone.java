@@ -1,3 +1,5 @@
+/// Class Agricultural_Drone uses drone interface
+/// creates default values for each component of the drone
 public class Agricultural_Drone implements Drone{
 
     // modify methods to take into acount that its builder now
